@@ -1,38 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: matmaca <matmaca@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/12 18:35:22 by matmaca           #+#    #+#             */
-/*   Updated: 2023/10/12 19:00:01 by matmaca          ###   ########.fr       */
+/*   Created: 2023/10/13 17:51:16 by matmaca           #+#    #+#             */
+/*   Updated: 2023/10/13 18:31:35 by matmaca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t ft_strlcpy(char *dest, const char *src, size_t size)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	size_t i;
-	size_t a;
+	char	*newstr;
+	int		s1_len;
+	int		s2_len;
+	int		i;
+	int		j;
 
 	i = 0;
-	a = ft_strlen(src);
-	if (!src)
-		return (0);
-	while (src[i] != '\0' && i < size)
+	j = 0;
+	s1_len = ft_strlen(s1);
+	s2_len = ft_strlen(s2);
+	newstr = (char *)malloc((sizeof(char) * (s1_len + s2_len)) + 1);
+	while (i < s1_len)
 	{
-		dest[i] = src[i];
-		i++;
+		newstr[i] = s1[i];
+		i ++;
 	}
-	if (size < a)
+	while (j < s2_len)
 	{
-		dest[size - 1] = '\0';
+		newstr[i] = s2[j];
+		i ++;
+		j ++;
 	}
-	else if (size != 0)
-	{
-		dest[i] = '\0';
-	}
-	return (a);
+	newstr[i] = '\0';
+	return (newstr);
 }

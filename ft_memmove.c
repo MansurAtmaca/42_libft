@@ -5,7 +5,7 @@ void *ft_memmove(void *dst, const void *src, size_t len)
     size_t i;
     char *source;
     char *destination;
-    
+
 
     i = 0;
     destination = (char *)dst;
@@ -28,6 +28,6 @@ void *ft_memmove(void *dst, const void *src, size_t len)
         i ++;
     }
     return (dst);
-    
+
 
 }

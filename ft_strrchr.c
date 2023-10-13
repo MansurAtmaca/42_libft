@@ -1,38 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_strrchr2.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: matmaca <matmaca@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/12 18:35:22 by matmaca           #+#    #+#             */
-/*   Updated: 2023/10/12 19:00:01 by matmaca          ###   ########.fr       */
+/*   Created: 2023/10/09 17:23:36 by matmaca           #+#    #+#             */
+/*   Updated: 2023/10/11 15:36:52 by matmaca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-size_t ft_strlcpy(char *dest, const char *src, size_t size)
+char	*ft_strrchr(const char *str, int c)
 {
-	size_t i;
-	size_t a;
+	int	i;
 
 	i = 0;
-	a = ft_strlen(src);
-	if (!src)
-		return (0);
-	while (src[i] != '\0' && i < size)
+	while (str[i] != '\0')
 	{
-		dest[i] = src[i];
 		i++;
 	}
-	if (size < a)
+	while (str[i] != c)
 	{
-		dest[size - 1] = '\0';
+		i--;
 	}
-	else if (size != 0)
+	if (str[i] == c)
 	{
-		dest[i] = '\0';
+		return ((char *)(str + i));
 	}
-	return (a);
+	return (0);
 }

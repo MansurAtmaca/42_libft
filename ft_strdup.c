@@ -1,38 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: matmaca <matmaca@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/12 18:35:22 by matmaca           #+#    #+#             */
-/*   Updated: 2023/10/12 19:00:01 by matmaca          ###   ########.fr       */
+/*   Created: 2023/10/13 16:34:51 by matmaca           #+#    #+#             */
+/*   Updated: 2023/10/13 16:55:24 by matmaca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t ft_strlcpy(char *dest, const char *src, size_t size)
+char	*ft_strdup(const char *s)
 {
-	size_t i;
-	size_t a;
+	int	size;
+	int	i;
+	char	*cpy;
 
 	i = 0;
-	a = ft_strlen(src);
-	if (!src)
-		return (0);
-	while (src[i] != '\0' && i < size)
+	size = ft_strlen(s);
+	cpy = (char *)malloc((sizeof(char) * size) + 1);
+	while (s[i])
 	{
-		dest[i] = src[i];
-		i++;
+		cpy[i] = s[i];
+		i ++;
 	}
-	if (size < a)
-	{
-		dest[size - 1] = '\0';
-	}
-	else if (size != 0)
-	{
-		dest[i] = '\0';
-	}
-	return (a);
+	cpy[i] = '\0';
+	return (cpy);
 }

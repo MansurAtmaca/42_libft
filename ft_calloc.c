@@ -1,38 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: matmaca <matmaca@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/12 18:35:22 by matmaca           #+#    #+#             */
-/*   Updated: 2023/10/12 19:00:01 by matmaca          ###   ########.fr       */
+/*   Created: 2023/10/13 14:27:44 by matmaca           #+#    #+#             */
+/*   Updated: 2023/10/13 15:37:40 by matmaca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t ft_strlcpy(char *dest, const char *src, size_t size)
+void	*ft_calloc(size_t count, size_t size)
 {
-	size_t i;
-	size_t a;
+	void	*array;
+	char	*d;
+	size_t	i;
 
 	i = 0;
-	a = ft_strlen(src);
-	if (!src)
-		return (0);
-	while (src[i] != '\0' && i < size)
+	if (count == 0 || size == 0)
+		return (NULL);
+	array = malloc(count * size);
+	d = array;
+	while (i < size * count)
 	{
-		dest[i] = src[i];
-		i++;
+		*(char *)(d + i) = 0;
+		i ++;
 	}
-	if (size < a)
-	{
-		dest[size - 1] = '\0';
-	}
-	else if (size != 0)
-	{
-		dest[i] = '\0';
-	}
-	return (a);
+	return (array);
 }

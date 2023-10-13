@@ -1,38 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: matmaca <matmaca@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/12 18:35:22 by matmaca           #+#    #+#             */
-/*   Updated: 2023/10/12 19:00:01 by matmaca          ###   ########.fr       */
+/*   Created: 2023/10/09 16:14:15 by matmaca           #+#    #+#             */
+/*   Updated: 2023/10/09 18:59:46 by matmaca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-size_t ft_strlcpy(char *dest, const char *src, size_t size)
+int	ft_isascii(int c)
 {
-	size_t i;
-	size_t a;
-
-	i = 0;
-	a = ft_strlen(src);
-	if (!src)
-		return (0);
-	while (src[i] != '\0' && i < size)
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	if (size < a)
-	{
-		dest[size - 1] = '\0';
-	}
-	else if (size != 0)
-	{
-		dest[i] = '\0';
-	}
-	return (a);
+	if (0 <= c && c <= 127)
+		return (1);
+	return (0);
 }

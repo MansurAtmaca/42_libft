@@ -1,38 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: matmaca <matmaca@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/12 18:35:22 by matmaca           #+#    #+#             */
-/*   Updated: 2023/10/12 19:00:01 by matmaca          ###   ########.fr       */
+/*   Created: 2023/10/13 11:59:11 by matmaca           #+#    #+#             */
+/*   Updated: 2023/10/13 13:09:55 by matmaca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t ft_strlcpy(char *dest, const char *src, size_t size)
+int	ft_atoi(const char *str)
 {
-	size_t i;
-	size_t a;
+	int	i;
+	int	res;
+	int	mines;
 
 	i = 0;
-	a = ft_strlen(src);
-	if (!src)
-		return (0);
-	while (src[i] != '\0' && i < size)
+	res = 0;
+	mines = 1;
+	while (str[i] == ' ' || (str[i] >= 9 && str[i] <= 13))
+		i ++;
+	if (str[i] == '-' || str[i] == '+')
 	{
-		dest[i] = src[i];
-		i++;
+		if (str[i] == '-')
+			mines *= -1;
+		i ++;
 	}
-	if (size < a)
+	while (str[i] >= '0' && str[i] <= '9')
 	{
-		dest[size - 1] = '\0';
+		res *= 10;
+		res += str[i] - '0';
+		i ++;
 	}
-	else if (size != 0)
-	{
-		dest[i] = '\0';
-	}
-	return (a);
+	return (res * mines);
 }
