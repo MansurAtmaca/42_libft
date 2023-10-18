@@ -6,16 +6,16 @@
 /*   By: matmaca <matmaca@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/12 18:35:22 by matmaca           #+#    #+#             */
-/*   Updated: 2023/10/12 19:00:01 by matmaca          ###   ########.fr       */
+/*   Updated: 2023/10/18 21:06:59 by matmaca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t ft_strlcpy(char *dest, const char *src, size_t size)
+size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
-	size_t i;
-	size_t a;
+	size_t	i;
+	size_t	a;
 
 	i = 0;
 	a = ft_strlen(src);

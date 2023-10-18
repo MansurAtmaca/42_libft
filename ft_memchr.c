@@ -6,7 +6,7 @@
 /*   By: matmaca <matmaca@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 15:25:55 by matmaca           #+#    #+#             */
-/*   Updated: 2023/10/11 15:29:59 by matmaca          ###   ########.fr       */
+/*   Updated: 2023/10/18 20:28:25 by matmaca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_memchr(const void *ptr, int c, size_t n)
 	size_t	i;
 
 	i = 0;
-	while (i <= n)
+	while (i < n)
 	{
 		if (*(unsigned char *)(ptr + i) == (unsigned char) c)
 			return ((void *)(ptr + i));

@@ -6,7 +6,7 @@
 /*   By: matmaca <matmaca@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 16:34:51 by matmaca           #+#    #+#             */
-/*   Updated: 2023/10/13 16:55:24 by matmaca          ###   ########.fr       */
+/*   Updated: 2023/10/18 21:07:29 by matmaca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strdup(const char *s)
 {
-	int	size;
-	int	i;
+	int		size;
+	int		i;
 	char	*cpy;
 
 	i = 0;

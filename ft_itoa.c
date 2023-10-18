@@ -6,7 +6,7 @@
 /*   By: matmaca <matmaca@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 12:37:30 by matmaca           #+#    #+#             */
-/*   Updated: 2023/10/17 13:27:15 by matmaca          ###   ########.fr       */
+/*   Updated: 2023/10/18 23:18:43 by matmaca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ static	int	find_digit(int n)
 {
 	int	i;
 
-	i = 0;
+	i = 1;
 	if (n < 0)
 		n *= -1;
 	while (n / 10 > 10)
@@ -24,10 +24,7 @@ static	int	find_digit(int n)
 		i++;
 		n /= 10;
 	}
-	if (n >= 10)
-		return (i + 2);
-	else
-		return (i + 1);
+	return (i + 1);
 }
 
 char	*ft_itoa(int n)
