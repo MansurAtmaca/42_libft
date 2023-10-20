@@ -24,7 +24,11 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (!sub_str)
 		return (NULL);
 	if (start >= s_len)
+	{
+		*sub_str ='\0';
 		return (sub_str);
+	}
+		
 	while (i < len)
 	{
 		sub_str[i] = s[start];
@@ -34,3 +38,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	sub_str[i] = '\0';
 	return (sub_str);
 }
+/* int main()
+{
+	printf("%s",ft_substr("merhaba televole", 3, 7
+	));
+} */

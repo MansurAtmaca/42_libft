@@ -16,30 +16,34 @@ static	int	find_digit(int n)
 {
 	int	i;
 
-	i = 1;
+	i = 0;
+	if (n == 0)
+	{
+		i++;
+	}	
 	if (n < 0)
+	{
 		n *= -1;
-	while (n / 10 > 10)
+	}
+	while (n != 0)
 	{
 		i++;
 		n /= 10;
 	}
-	return (i + 1);
+	return (i);
 }
 
 char	*ft_itoa(int n)
 {
-	int		digit;
-	char	*string;
-	int		num;
+	int			digit;
+	char		*string;
+	long		num;
 
-	if (n == -2147483648)
-		return ("-2147483648");
-	num = n;
-	digit = find_digit(n);
-	if (n < 0)
+	num = (long)n;
+	digit = find_digit(num);
+	if (num < 0)
 	{
-		n *= -1;
+		num *= -1;
 		digit += 1;
 	}
 	string = (char *)malloc(sizeof(char) * digit + 1);
@@ -48,10 +52,10 @@ char	*ft_itoa(int n)
 	string[digit] = '\0';
 	while (digit > 0)
 	{
-		string[--digit] = (n % 10) + 48;
-		n /= 10;
+		string[--digit] = (num % 10) + 48;
+		num /= 10;
 	}
-	if (num < 0)
+	if (n < 0)
 		string[0] = '-';
 	return (string);
 }
