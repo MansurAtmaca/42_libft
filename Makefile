@@ -4,6 +4,9 @@ FLAG = -Wall -Wextra -Werror
 
 SRC	=	*.c
 
+BONUS = *.c
+			
+
 OBJ = $(SRC:.c=.o)
 
 all: $(NAME)
@@ -12,6 +15,10 @@ $(NAME):
 	gcc $(FLAG) -c $(SRC)
 	ar rc $(NAME) *.o
 
+bonus:
+	gcc $(FLAG) -c $(BONUS)
+	ar rc $(NAME) *.o
+	
 clean:
 	/bin/rm -f  *.o
 fclean: clean
