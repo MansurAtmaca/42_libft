@@ -43,12 +43,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 	while (i < s1_len && check (set, s1[s1_len - 1]))
 		s1_len --;
 	str = (char *)malloc(sizeof(char) * (s1_len - i + 1));
+	if (!str)
+		return (NULL);
 	while (i < s1_len)
-	{
-		str[a] = s1[i];
-		a ++;
-		i ++;
-	}
+		str[a ++] = s1[i ++];
 	if (!str)
 		return (NULL);
 	str[a] = '\0';
