@@ -6,11 +6,11 @@
 /*   By: matmaca <matmaca@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/12 18:40:37 by matmaca           #+#    #+#             */
-/*   Updated: 2023/10/12 18:41:20 by matmaca          ###   ########.fr       */
+/*   Updated: 2023/10/24 16:48:53 by matmaca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

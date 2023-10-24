@@ -6,7 +6,7 @@
 /*   By: matmaca <matmaca@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 14:27:44 by matmaca           #+#    #+#             */
-/*   Updated: 2023/10/13 15:37:40 by matmaca          ###   ########.fr       */
+/*   Updated: 2023/10/24 17:21:19 by matmaca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,17 +15,15 @@
 void	*ft_calloc(size_t count, size_t size)
 {
 	void	*array;
-	char	*d;
 	size_t	i;
 
 	i = 0;
-	array = malloc(count * size);
+	array = (void *)malloc(count * size);
 	if (!array)
 		return (NULL);
-	d = array;
 	while (i < size * count)
 	{
-		*(char *)(d + i) = 0;
+		*(char *)(array + i) = 0;
 		i ++;
 	}
 	return (array);

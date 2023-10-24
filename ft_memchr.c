@@ -6,12 +6,11 @@
 /*   By: matmaca <matmaca@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 15:25:55 by matmaca           #+#    #+#             */
-/*   Updated: 2023/10/18 20:28:25 by matmaca          ###   ########.fr       */
+/*   Updated: 2023/10/24 16:40:27 by matmaca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <stdio.h>
+#include "libft.h"
 
 void	*ft_memchr(const void *ptr, int c, size_t n)
 {

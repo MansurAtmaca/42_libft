@@ -6,12 +6,11 @@
 /*   By: matmaca <matmaca@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/12 21:02:35 by matmaca           #+#    #+#             */
-/*   Updated: 2023/10/18 22:29:32 by matmaca          ###   ########.fr       */
+/*   Updated: 2023/10/24 16:52:17 by matmaca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
