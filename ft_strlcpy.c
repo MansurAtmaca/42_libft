@@ -6,7 +6,7 @@
 /*   By: matmaca <matmaca@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/12 18:35:22 by matmaca           #+#    #+#             */
-/*   Updated: 2023/10/18 21:06:59 by matmaca          ###   ########.fr       */
+/*   Updated: 2023/10/24 14:42:01 by matmaca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	size_t	i;
 
 	i = 0;
-	if(dstsize != 0)
+	if (dstsize != 0)
 	{
 		while (src[i] != '\0' && i < dstsize - 1)
 		{
@@ -27,5 +27,4 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 		dst[i] = '\0';
 	}
 	return (ft_strlen(src));
-	
 }
