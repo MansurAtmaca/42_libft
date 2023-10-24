@@ -11,35 +11,31 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-
-char	*ft_substr(char const *s, unsigned int start, size_t len)
+static size_t check(size_t a, size_t b)
 {
-	char			*sub_str;
-	size_t			i;
-	unsigned int	s_len;
+	if(a > b)
+		return (b);
+	return (a);
+}
+
+char *ft_substr(char const *s, unsigned int start, size_t len)
+{
+	char *sub_str;
+	size_t i;
+	size_t s_len;
 
 	i = 0;
 	s_len = ft_strlen(s);
-	sub_str = (char *)malloc((len * sizeof(char)) + 1);
-	if (!sub_str)
-		return (NULL);
+	len = check(s_len, len);
 	if (start >= s_len)
 	{
-		*sub_str ='\0';
-		return (sub_str);
+		return (ft_strdup(""));
 	}
-		
-	while (i < len)
-	{
-		sub_str[i] = s[start];
-		i ++;
-		start ++;
-	}
+	sub_str = (char *)malloc((len + 1) * sizeof(char));
+	if (!sub_str)
+		return (NULL);
+	while (i < len && s[i])
+		sub_str[i++] = s[start++];
 	sub_str[i] = '\0';
 	return (sub_str);
 }
-/* int main()
-{
-	printf("%s",ft_substr("merhaba televole", 3, 7
-	));
-} */
