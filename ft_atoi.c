@@ -6,11 +6,9 @@
 /*   By: matmaca <matmaca@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 11:59:11 by matmaca           #+#    #+#             */
-/*   Updated: 2023/10/13 13:09:55 by matmaca          ###   ########.fr       */
+/*   Updated: 2023/10/26 13:37:53 by matmaca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_atoi(const char *str)
 {

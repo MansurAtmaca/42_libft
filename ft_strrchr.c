@@ -6,11 +6,9 @@
 /*   By: matmaca <matmaca@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 17:23:36 by matmaca           #+#    #+#             */
-/*   Updated: 2023/10/24 17:30:28 by matmaca          ###   ########.fr       */
+/*   Updated: 2023/10/26 13:43:13 by matmaca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {

@@ -6,11 +6,9 @@
 /*   By: matmaca <matmaca@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 13:54:08 by matmaca           #+#    #+#             */
-/*   Updated: 2023/10/24 16:52:05 by matmaca          ###   ########.fr       */
+/*   Updated: 2023/10/26 13:42:10 by matmaca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {

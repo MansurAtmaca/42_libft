@@ -6,11 +6,11 @@
 /*   By: matmaca <matmaca@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 12:37:30 by matmaca           #+#    #+#             */
-/*   Updated: 2023/10/24 14:35:14 by matmaca          ###   ########.fr       */
+/*   Updated: 2023/10/26 13:39:51 by matmaca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdlib.h>
 
 static	int	find_digit(int n)
 {

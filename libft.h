@@ -6,20 +6,19 @@
 /*   By: matmaca <matmaca@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 15:50:57 by matmaca           #+#    #+#             */
-/*   Updated: 2023/10/24 16:06:34 by matmaca          ###   ########.fr       */
+/*   Updated: 2023/10/26 14:19:13 by matmaca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <unistd.h>
 # include <stdlib.h>
 
-int		ft_isalpha(int s);
-int		ft_isdigit(int n);
-int		ft_isalnum(int y);
-int		ft_isascii(int x);
+int		ft_isalpha(int c);
+int		ft_isdigit(int c);
+int		ft_isalnum(int c);
+int		ft_isascii(int c);
 int		ft_isprint(int c);
 size_t	ft_strlen(const char *s);
 void	*ft_memset(void *b, int c, size_t len);

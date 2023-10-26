@@ -6,11 +6,11 @@
 /*   By: matmaca <matmaca@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 17:37:26 by matmaca           #+#    #+#             */
-/*   Updated: 2023/10/24 14:42:16 by matmaca          ###   ########.fr       */
+/*   Updated: 2023/10/26 13:42:41 by matmaca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdlib.h>
 
 size_t	ft_strlen(const char *str)
 {
