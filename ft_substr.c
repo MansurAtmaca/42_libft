@@ -6,11 +6,12 @@
 /*   By: matmaca <matmaca@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 17:21:10 by matmaca           #+#    #+#             */
-/*   Updated: 2023/10/24 14:34:45 by matmaca          ###   ########.fr       */
+/*   Updated: 2023/10/27 22:27:14 by matmaca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

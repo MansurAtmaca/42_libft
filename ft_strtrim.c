@@ -6,11 +6,12 @@
 /*   By: matmaca <matmaca@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 18:35:39 by matmaca           #+#    #+#             */
-/*   Updated: 2023/10/16 11:55:12 by matmaca          ###   ########.fr       */
+/*   Updated: 2023/10/27 22:27:22 by matmaca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 static int	check(char const *set, char c)
 {

@@ -6,14 +6,14 @@
 /*   By: matmaca <matmaca@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 15:50:57 by matmaca           #+#    #+#             */
-/*   Updated: 2023/10/26 14:19:13 by matmaca          ###   ########.fr       */
+/*   Updated: 2023/10/27 22:35:01 by matmaca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <stdlib.h>
+# include <sys/_types/_size_t.h>
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);

@@ -6,11 +6,12 @@
 /*   By: matmaca <matmaca@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 16:34:51 by matmaca           #+#    #+#             */
-/*   Updated: 2023/10/18 21:07:29 by matmaca          ###   ########.fr       */
+/*   Updated: 2023/10/27 22:25:31 by matmaca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 char	*ft_strdup(const char *s)
 {

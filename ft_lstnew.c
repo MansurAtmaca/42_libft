@@ -6,11 +6,12 @@
 /*   By: matmaca <matmaca@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 14:41:07 by matmaca           #+#    #+#             */
-/*   Updated: 2023/10/24 18:21:51 by matmaca          ###   ########.fr       */
+/*   Updated: 2023/10/27 22:30:46 by matmaca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 t_list	*ft_lstnew(void *content)
 {

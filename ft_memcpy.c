@@ -6,11 +6,11 @@
 /*   By: matmaca <matmaca@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 17:51:21 by matmaca           #+#    #+#             */
-/*   Updated: 2023/10/26 13:40:21 by matmaca          ###   ########.fr       */
+/*   Updated: 2023/10/27 22:31:58 by matmaca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include <sys/_types/_size_t.h>
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {

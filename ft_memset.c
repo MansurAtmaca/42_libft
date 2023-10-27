@@ -6,11 +6,11 @@
 /*   By: matmaca <matmaca@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 10:12:36 by matmaca           #+#    #+#             */
-/*   Updated: 2023/10/26 13:40:59 by matmaca          ###   ########.fr       */
+/*   Updated: 2023/10/27 22:32:11 by matmaca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include <sys/_types/_size_t.h>
 
 void	*ft_memset(void *b, int c, size_t len)
 {

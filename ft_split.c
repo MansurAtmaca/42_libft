@@ -6,11 +6,12 @@
 /*   By: matmaca <matmaca@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 14:37:49 by matmaca           #+#    #+#             */
-/*   Updated: 2023/10/24 18:34:10 by matmaca          ###   ########.fr       */
+/*   Updated: 2023/10/27 22:32:53 by matmaca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 static char	**ft_free(char **strs, int j)
 {

@@ -6,11 +6,12 @@
 /*   By: matmaca <matmaca@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 13:30:50 by matmaca           #+#    #+#             */
-/*   Updated: 2023/10/17 13:50:42 by matmaca          ###   ########.fr       */
+/*   Updated: 2023/10/27 22:26:23 by matmaca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

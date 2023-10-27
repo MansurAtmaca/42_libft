@@ -6,11 +6,11 @@
 /*   By: matmaca <matmaca@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 17:34:04 by matmaca           #+#    #+#             */
-/*   Updated: 2023/10/26 13:40:18 by matmaca          ###   ########.fr       */
+/*   Updated: 2023/10/27 22:31:19 by matmaca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include <sys/_types/_size_t.h>
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

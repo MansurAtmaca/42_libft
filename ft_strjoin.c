@@ -6,11 +6,12 @@
 /*   By: matmaca <matmaca@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 17:51:16 by matmaca           #+#    #+#             */
-/*   Updated: 2023/10/24 14:41:48 by matmaca          ###   ########.fr       */
+/*   Updated: 2023/10/27 22:25:48 by matmaca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
